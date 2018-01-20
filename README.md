@@ -2,7 +2,7 @@
 API with examples of multiple authentication strategies (Python).
 - Basic
 - Digest
-- Token
+- Simple Token
 - OAuth with JWT
 
 Python. Sinatra/Django. PostgreSQL.
