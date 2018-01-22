@@ -17,6 +17,5 @@ pipenv install
 ### How to run? ###
 
 ```
-export FLASK_APP=app.py
-gunicorn app:app
+gunicorn main:app
 ```
