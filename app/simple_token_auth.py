@@ -2,11 +2,15 @@ from functools import wraps
 from flask import request, Response, jsonify
 
 
+def _check_credentials(key, secret):
+    return key == 'key' and secret == 'secret'
+
+
 def generate_simple_token():
     auth = request.get_json()
     if 'key' not in auth or 'secret' not in auth:
         return Response('Must provide a key/secret pair\n', 400)
-    if auth['key'] != 'key' or auth['secret'] != 'secret':
+    if not _check_credentials(auth['key'], auth['secret']):
         return Response('Invalid key/secret pair\n', 404)
     token = {'access_token': 'abc123'}
     return jsonify(token)
