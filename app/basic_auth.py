@@ -10,8 +10,7 @@ def _authenticate():
     """ Sends a 401 response with the type of auth expected """
     return Response(
         'Unauthorized, please login with the correct credentials\n', 401,
-        {'WWW-Authenticate': 'Basic'}
-    )
+        {'WWW-Authenticate': 'Basic'})
 
 
 def requires_basic_auth(f):

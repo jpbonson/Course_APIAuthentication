@@ -1,6 +1,6 @@
 # API Authentication Course
 API with examples of multiple authentication strategies (Python).
-- Basic and Digest
+- Basic
 - Simple Token
 - OAuth 2.0 with JWT
 
