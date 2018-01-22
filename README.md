@@ -19,3 +19,9 @@ pipenv install
 ```
 gunicorn main:app
 ```
+
+### Application ###
+
+https://course-api-auth.herokuapp.com/
+
+The routes are described in the slides.
