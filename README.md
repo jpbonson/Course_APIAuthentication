@@ -6,7 +6,7 @@ API with examples of multiple authentication strategies (Python).
 
 Python. Flask.
 
-Slides at https://docs.google.com/presentation/d/1DqsYhVBo5GtODF5u6NWwkksgNI0SexcxGwgmArk324o/edit?usp=sharing (Portuguese only)
+Slides at https://docs.google.com/presentation/d/1zWgwnl7QCW8svIQOgq28rlYA13sK3P7N82SH-Wceel0/edit?usp=sharing (Portuguese only)
 
 ### How to install? ###
 
