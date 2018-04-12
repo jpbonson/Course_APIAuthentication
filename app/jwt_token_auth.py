@@ -56,7 +56,11 @@ def generate_jwt_token():
 
 # https://github.com/jpadilla/pyjwt/blob/master/docs/usage.rst
 def _token_errors(encoded_token):
-    decoded_payload, signing, header, signature = PyJWT()._load(encoded_token)
+    try:
+        decoded_payload, signing, header, signature = PyJWT()._load(encoded_token)
+    except jwt.exceptions.DecodeError:
+        return "Invalid token format"
+
     kid = header['kid']
 
     issuer = "https://course-api-auth.herokuapp.com/"
